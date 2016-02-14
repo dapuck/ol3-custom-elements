@@ -1,0 +1,33 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="ol3-map">
+    <template>
+        <link rel="stylesheet" href="lib/ol.css" type="text/css">
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <div id="map"></div>
+    </template>
+    <script src="lib/ol.js"></script>
+    <script>
+        Polymer({
+            is: "ol3-map",
+            ready: function () {
+                this.map = new ol.Map({
+                    layers: [
+                        new ol.layer.Tile({
+                            source: new ol.source.OSM()
+                        })
+                    ],
+                    target: this.$$("#map"),
+                    view: new ol.View({
+                        center : [0, 0],
+                        zoom : 2
+                    })
+                });
+            }
+        })
+    </script>
+</dom-module>

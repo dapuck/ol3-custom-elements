@@ -1,0 +1,23 @@
+{
+  "name": "ol3-custom-elements",
+  "main": "ol3-custom-elements.js",
+  "description": "",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Ian McCall <imccall@da-puck.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.4"
+  }
+}
